@@ -1,0 +1,140 @@
+# Selenium Automation Project
+
+This project automates tasks using Selenium WebDriver and is built with a **Django REST Framework** backend and a **React** frontend.
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Project Overview
+
+This project demonstrates how to automate tasks using Selenium WebDriver. The backend is built with Django REST Framework for handling APIs, and the frontend is developed in React for a dynamic user interface.
+
+### Use Cases:
+- Web scraping.
+- Automated browser actions.
+- Testing frontend functionalities.
+
+## Features
+
+- Backend API with Django REST Framework.
+- React-based interactive frontend.
+- Selenium WebDriver integration for automation.
+- Customizable and modular architecture.
+- Cross-browser automation.
+
+## Tech Stack
+
+- **Frontend:** React, JavaScript, CSS, Bootstrap.
+- **Backend:** Django REST Framework, Python.
+- **Automation:** Selenium WebDriver.
+- **Database:** SQLite (or any supported DB configured in Django).
+- **Others:** Axios for API calls, dotenv for configuration.
+
+## Installation
+
+### Prerequisites
+- Python 3.8+
+- Node.js and npm
+- Google Chrome (or another supported browser) and ChromeDriver
+- Selenium Python library
+
+### Backend Setup
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+   cd https://github.com/Shuru63/seleniumAssignment.git/backend
+   ```
+
+2. Create a virtual environment and activate it:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  
+   ```
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Run database migrations:
+   ```bash
+   python manage.py migrate
+   ```
+
+5. Start the backend server:
+   ```bash
+   python manage.py runserver
+   ```
+
+### Frontend Setup
+1. Navigate to the frontend folder:
+   ```bash
+   cd https://github.com/Shuru63/seleniumAssignment.git/frontend
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the React development server:
+   ```bash
+   npm start
+   ```
+
+### Selenium Setup
+1. Install Selenium in the backend:
+   ```bash
+   pip install selenium
+   ```
+
+2. Download the appropriate browser driver (e.g., [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)).
+
+3. Ensure the browser driver is added to your PATH.
+
+## Usage
+
+1. Start the backend server.
+2. Start the frontend development server.
+3. Access the frontend at `http://localhost:3000`.
+4. Use the available interface to initiate automation tasks.
+5. Monitor logs for Selenium actions.
+
+### Running Automation Scripts
+Automation scripts are located in the backend and can be executed directly or triggered via API calls.
+
+Example command to run a Selenium script:
+```bash
+python manage.py runscript manage.py
+```
+
+## Folder Structure
+
+```
+<repository_name>/
+|-- backend/
+|   |-- automation/  # Selenium scripts
+|   |-- manage.py
+|   |-- settings.py
+|-- frontend/
+|   |-- src/
+|       |-- components/
+|       |-- App.js
+|-- README.md
+```
+
+## Contributing
+
+Contributions are welcome! Please fork the repository, create a feature branch, and submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
